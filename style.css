@@ -22,6 +22,10 @@ html {
   max-width: 1600px;
 }
 
+.view3 {
+  max-width: 1600px;
+}
+
 main {
   width: 100%;
   display: flex;
@@ -253,6 +257,8 @@ main .view2 {
   flex-direction: column;
   gap: 2.3rem;
   background-image: url(https://i.pinimg.com/736x/43/9e/07/439e0745fd00e29a1f6a4d10b41d425e.jpg);
+  background-position: center;
+  background-size: cover;
   padding: 1rem;
   color: white;
 }
@@ -264,7 +270,7 @@ main .view2 .top {
 }
 main .view2 .top h2 {
   font-size: 2.2rem;
-  font-weight: 900;
+  font-weight: 700;
   opacity: 0.8;
 }
 main .view2 .top #Popular {
@@ -360,6 +366,89 @@ main .view2 .bottom .card h4 {
   font-weight: 600;
   opacity: 0.8;
 }
+main .view3 {
+  width: 100%;
+  padding: 1rem;
+  background-image: url(https://i.pinimg.com/736x/be/bd/11/bebd11d18ec5a65c93d869f7451ae2fb.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: white;
+  opacity: 0.9;
+}
+main .view3 .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+main .view3 .top h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+main .view3 .top .details {
+  width: 100%;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+main .view3 .top .details img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+main .view3 .top .details .para {
+  color: #ff5303;
+}
+main .view3 .top .details p {
+  font-size: 1.2rem;
+}
+main .view3 .top .details h4 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+main .view3 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+main .view3 .bottom .card {
+  width: 100%;
+  display: flex;
+  border-radius: 0.8rem;
+  gap: 1.3rem;
+  box-shadow: 0rem 0rem 0.3rem white;
+  padding: 0.5rem;
+}
+main .view3 .bottom .card img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0.8rem;
+  box-shadow: 0rem 0rem 0rem black;
+}
+main .view3 .bottom .card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .view3 .bottom .card .content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+main .view3 .bottom .card .content h4 {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
 
 @media (min-width: 900px) {
   main header nav .menu {
@@ -377,7 +466,7 @@ main .view2 .bottom .card h4 {
     width: 50%;
   }
   main .view1 .top {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   main .view1 .top .text {
     gap: 2rem;
@@ -404,11 +493,31 @@ main .view2 .bottom .card h4 {
   main .view2 .top .link {
     display: flex;
     flex-direction: row;
+    font-size: 1.2rem;
   }
   main .view2 .bottom {
     width: 100%;
   }
   main .view2 .bottom .card {
     width: 33%;
+  }
+  main .view3 {
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  main .view3 .top, main .view3 .bottom {
+    width: 50%;
+  }
+  main .view3 .top h2 {
+    font-size: 2.2rem;
+  }
+  main .view3 .bottom {
+    padding-top: 2rem;
+    justify-content: space-between;
+  }
+  main .view3 .bottom .card .content {
+    justify-content: space-evenly;
   }
 }/*# sourceMappingURL=style.css.map */

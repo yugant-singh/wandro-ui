@@ -1,10 +1,12 @@
 # Wandro — Travel Explorer UI
+## Live-Demo --> https://wandro-ui.netlify.app/
 
 A responsive travel website UI built with **HTML5** and **SCSS**.  
 This project showcases a clean layout, fixed navigation, and immersive video-based sections for modern travel exploration.
 
 ---
 
+## Adding the Top-Stories Section -in this web page 
 ## Features
 
 - Responsive design for all devices  
@@ -31,4 +33,5 @@ This project showcases a clean layout, fixed navigation, and immersive video-bas
 ## Developer Information
 # Developer: Yugant Singh
 # Institute: Sheriyans Coding School
+# Instructer: Harsh Vandana Sharma 
 

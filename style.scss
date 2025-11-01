@@ -26,6 +26,9 @@ html {
 .view2{
     max-width: 1600px;
 }
+.view3{
+    max-width: 1600px;
+}
 
 
 
@@ -288,6 +291,8 @@ main {
         width: 100%;
         @include flex-column(2.3rem);
         background-image: url(https://i.pinimg.com/736x/43/9e/07/439e0745fd00e29a1f6a4d10b41d425e.jpg);
+        background-position: center;
+        background-size: cover;
         padding: 1rem;
         color: white;
 
@@ -298,7 +303,7 @@ main {
 
             h2 {
                 font-size: 2.2rem;
-                font-weight: 900;
+                font-weight: 700;
                 opacity: 0.8;
             }
 
@@ -414,6 +419,91 @@ main {
             }
         }
     }
+    .view3{
+        width: 100%;
+        padding: 1rem;
+        background-image: url(https://i.pinimg.com/736x/be/bd/11/bebd11d18ec5a65c93d869f7451ae2fb.jpg);
+        background-size: cover;
+        background-position: center;
+        @include flex-column(1.5rem);
+        color: white;
+        opacity: 0.9;
+
+        .top{
+            width: 100%;
+            @include flex-column(1.3rem);
+
+            h2{
+                font-size: 2rem;
+                font-weight: 600;
+                opacity: 0.8;
+            }
+            
+            .details{
+                width: 100%;
+                opacity: 0.8;
+                @include flex-column(1rem);
+                justify-content: center;
+
+                img{
+                    width: 100%;
+                    border-radius: 0.8rem;
+                }
+
+                .para{
+                    color: #ff5303;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+                h4{
+                    font-size: 1.5rem;
+                    line-height: 1.4;
+                    font-weight: 600;
+                }
+            }
+
+        }
+
+        .bottom{
+            width: 100%;
+            @include flex-column(1.3rem);
+
+
+            .card{
+                width: 100%;
+                display: flex;
+                border-radius: 0.8rem;
+                gap: 1.3rem;
+            box-shadow: 0rem 0rem 0.3rem white;
+            padding: 0.5rem;
+
+                img{
+                    width: 50%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 0.8rem;
+                    box-shadow: 0rem 0rem 0rem black;
+                }
+
+                .content{
+                    width: 100%;
+                    @include flex-column(0.5rem);
+                    
+                   p{
+                    font-size: 1.2rem;
+                    opacity: 0.9;
+                   
+                   }
+                   h4{
+                    font-size: 1.1rem;
+                    opacity: 0.8;
+                   }
+                    
+                }
+            }
+        }
+    }
 }
 
 
@@ -447,7 +537,7 @@ main {
             }
 
             .top {
-                justify-content: space-between;
+                justify-content: space-evenly;
 
                 .text {
 
@@ -487,6 +577,7 @@ main {
                 .link {
                     display: flex;
                     flex-direction: row;
+                    font-size: 1.2rem;
                 }
             }
 
@@ -499,5 +590,38 @@ main {
             }
 
         }
+
+        .view3{
+            flex-direction: row;
+            padding: 2rem;
+            justify-content: center;
+            align-items: center;
+           
+            .top,.bottom{
+                width: 50%;
+              
+
+            }
+          
+
+            .top{
+                h2{
+                    font-size: 2.2rem;
+
+                }
+            }
+            .bottom{
+             padding-top: 2rem;
+                justify-content: space-between;
+
+                .card{
+                    .content{
+                       justify-content: space-evenly;
+                      
+                    }
+                    
+            }
+        }
     }
+}
 }
